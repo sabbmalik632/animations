@@ -49,6 +49,8 @@ void draw(){
   rotate(TAU / 4);
   line(width * -.6 - frameCount * 5, 200, width * 400 + frameCount * 8, 9);
   
+  fill(#513156);
+  square(width * .48, height * .89, width * .04);
   
   if(frameCount < 200){
     saveFrame("frames/output_####.png");
