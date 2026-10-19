@@ -26,8 +26,8 @@ void draw(){
 
   translate(100, 500);
   rotate(TAU / 4);
-  line(width * -.8 - frameCount * 4, 10, width * 2 + frameCount * 4, 10);
-  line(width * -.88 - frameCount * 4, 20, width * 853 + frameCount * 4, 20);
+  line(width * -.888 - frameCount * 4, 10, width * 852 + frameCount * 4, 100);
+  line(width * -.88 - frameCount * 4, 20, width * 853 + frameCount * 4, 200);
   
   translate(0, 900);
   rotate(PI / 9);
@@ -36,14 +36,19 @@ void draw(){
   
   translate(0, 800);
   rotate(TAU / 10);
-  line(width * -.75 - frameCount * 4, 40, width * 150 + frameCount * 4, 80);
+  line(width * -.75 - frameCount * 455, 40, width * 150 + frameCount * 455, 800);
   
   translate(100, 0);
   rotate(TAU / 8); 
   line(width * -.999 - frameCount * 100, 1000, width * 10 + frameCount * 420, 900);
+  line(188, height * -.8 - frameCount * 60, 450, height * .871 + frameCount * 455);
+  
+  translate(width * .4, height * .9);
+  rotate(TAU / 4);
+  line(width * -.6 - frameCount * 5000, 200000, width * 400 + frameCount * 888, 999999999);
   
   
-  if(frameCount < 265){
+  if(frameCount < 200){
     saveFrame("frames/output_####.png");
   } else {
     noLoop();
