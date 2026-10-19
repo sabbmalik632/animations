@@ -6,12 +6,14 @@
 
 void draw(){
   
-  background(#ff89ff);
+  background(#0e00b9);
   
   textSize(128);
   fill(#513156);
   text(frameCount, 50, height-50);
-
+  
+  square(450, 450, 20);
+  
   translate(width * .2, height * .4);
   rotate(TAU / 8);
   line(width * -.1 - frameCount * 4, 50, width * .1 + frameCount * 4, 100);
