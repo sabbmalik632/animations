@@ -11,17 +11,21 @@ void draw(){
   textSize(128);
   fill(#513156);
   text(frameCount, 50, height-50);
-  
+  stroke(0);
   square(450, 450, 20);
   
+  fill(#513156);
+  square(width * .48, height * .89, width * .04);
+  
+  stroke(#ffffff);
   translate(width * .2, height * .4);
   rotate(TAU / 8);
   line(width * -.1 - frameCount * 4, 50, width * .1 + frameCount * 4, 100);
-  line(0, height * -.1 - frameCount * 4, 70, height * .1 + frameCount * 4);
+  line(0, height * -.2 - frameCount * 4, 70, height * .2 + frameCount * 4);
   line(0, height * -.5 - frameCount * 4, 40, height * .4 + frameCount * 4);
   
   translate(250, 250);
-  rotate(TAU / 8);
+  rotate(HALF_PI / 8);
   line(width * -.1 - frameCount * 4, 0, width * .1 + frameCount * 4, 0);
   line(0, height * -.1 - frameCount * 4, 0, height * .1 + frameCount * 4);
   line(0, height * -.1 - frameCount * 4, 0, height * .1 + frameCount * 4);
@@ -30,7 +34,7 @@ void draw(){
   rotate(TAU / 4);
   line(width * -.888 - frameCount * 4, 10, width * 852 + frameCount * 4, 100);
   line(width * -.88 - frameCount * 4, 20, width * 853 + frameCount * 4, 200);
-  
+    
   translate(0, 900);
   rotate(PI / 9);
   line(width * -.6 - frameCount * 4, 20, width * 3 + frameCount * 4, 20);
@@ -49,10 +53,14 @@ void draw(){
   rotate(TAU / 4);
   line(width * -.6 - frameCount * 5, 200, width * 400 + frameCount * 8, 9);
   
-  fill(#513156);
-  square(width * .48, height * .89, width * .04);
+  translate(50, 50);
+  rotate(TAU / 4);
+  line(width * -.8 - frameCount * 4, 10, width * 888 + frameCount * 4, 400);
+  line(width * -.9 - frameCount * 4, 20, width * 999 + frameCount * 4, 200);
   
-  if(frameCount < 200){
+  
+  
+  if(frameCount < 225){
     saveFrame("frames/output_####.png");
   } else {
     noLoop();
