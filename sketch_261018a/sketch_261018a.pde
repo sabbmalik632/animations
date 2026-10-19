@@ -45,7 +45,7 @@ void draw(){
   
   translate(width * .4, height * .9);
   rotate(TAU / 4);
-  line(width * -.6 - frameCount * 5000, 200000, width * 400 + frameCount * 888, 999999999);
+  line(width * -.6 - frameCount * 5, 200, width * 400 + frameCount * 8, 9);
   
   
   if(frameCount < 200){
